@@ -1,6 +1,6 @@
 # Merituuli — virtuaalinen taidenäyttely
 
-Staattinen, mobiiliystävällinen taidenäyttely Merituulen maalauksille ja runoille.
+Staattinen, mobiiliystävällinen taidenäyttely Merituulin maalauksille ja runoille.
 
 ## Paikallinen esikatselu
 
