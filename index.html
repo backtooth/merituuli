@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Merituulen virtuaalinen taidenäyttely – maalauksia ja runoja.">
+  <meta name="theme-color" content="#171d19">
+  <title>Merituuli — virtuaalinen taidenäyttely</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+  <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Merituuli, etusivu">Merituuli<span>•</span></a>
+    <nav aria-label="Päänavigaatio">
+      <a href="maalaukset.html">Maalaukset</a>
+      <a href="runot.html">Runot</a>
+      <a href="mailto:merituuli20@gmail.com">Yhteys</a>
+    </nav>
+  </header>
+
+  <main id="sisalto">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Virtuaalinen taidenäyttely</p>
+        <h1 id="hero-title">Tervetuloa<br>taiteilija<br><em>Merituulen</em><br>taidenäyttelyyn.</h1>
+        <p class="hero-intro">Kaksi polkua samaan maailmaan: värejä kankaalla ja sanoja, jotka jäävät kaikumaan.</p>
+        <a class="scroll-cue" href="#valitse">Valitse oma polkusi <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Poimintoja Merituulen maalauksista">
+        <figure class="hero-art-main">
+          <img src="assets/images/tyhja-aalto.jpeg" alt="Tyhjä aalto -maalaus, kuun valaisema tumma merimaisema" fetchpriority="high">
+        </figure>
+        <figure class="hero-art-accent hero-art-accent--top">
+          <img src="assets/images/mustikat.jpeg" alt="Yksityiskohta Mustikat-maalauksesta">
+        </figure>
+        <figure class="hero-art-accent hero-art-accent--bottom">
+          <img src="assets/images/purple-rain.jpeg" alt="Yksityiskohta Purple rain -maalauksesta">
+        </figure>
+        <span class="hero-number" aria-hidden="true">01</span>
+      </div>
+    </section>
+
+    <section class="paths" id="valitse" aria-labelledby="paths-title">
+      <div class="section-heading">
+        <p class="eyebrow">Näyttely alkaa tästä</p>
+        <h2 id="paths-title">Kumpaan suuntaan?</h2>
+      </div>
+
+      <div class="path-grid">
+        <a class="path-card path-card--paintings" href="maalaukset.html">
+          <span class="path-index">I</span>
+          <span class="path-visual" aria-hidden="true">
+            <img src="assets/images/elaimet-tutkii-symboleja.jpeg" alt="">
+          </span>
+          <span class="path-content">
+            <span class="eyebrow">11 teosta</span>
+            <strong>Maalaukset</strong>
+            <span>Astuu sisään väreihin</span>
+          </span>
+          <span class="path-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="path-card path-card--poems" href="runot.html">
+          <span class="path-index">II</span>
+          <span class="poem-fragment" aria-hidden="true">“Paljon tähtiä,<br>yksi loistaa<br>kirkkaimmin.”</span>
+          <span class="path-content">
+            <span class="eyebrow">7 runoa</span>
+            <strong>Runot</strong>
+            <span>Pysähtyy sanojen äärelle</span>
+          </span>
+          <span class="path-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="invitation" aria-label="Yhteystiedot">
+      <p>Kiitos kun vierailit.</p>
+      <h2>Taide on tehty<br><em>kohdattavaksi.</em></h2>
+      <a href="mailto:merituuli20@gmail.com">merituuli20@gmail.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Merituuli</span>
+    <span>Virtuaalinen taidenäyttely</span>
+  </footer>
+</body>
+</html>
