@@ -7,7 +7,8 @@
   <meta name="theme-color" content="#171d19">
   <title>Merituuli — virtuaalinen taidenäyttely</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <script src="home.js?v=1" defer></script>
 </head>
 <body class="home">
   <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
@@ -62,6 +63,50 @@
         </figure>
         <span class="hero-number" aria-hidden="true">01</span>
       </div>
+    </section>
+
+    <section class="exhibitions" id="nayttelyt" aria-labelledby="exhibitions-title" data-exhibitions hidden>
+      <div class="exhibitions-intro">
+        <div>
+          <p class="eyebrow">Näyttelyt</p>
+          <h2 id="exhibitions-title">Missä teoksia<br><em>voi nähdä?</em></h2>
+        </div>
+        <p>Merituulin teoksia voi tällä hetkellä käydä katsomassa myös paikan päällä.</p>
+      </div>
+
+      <article class="exhibition-card" data-exhibition-end="2026-12-09T17:00:00+02:00" hidden>
+        <div class="exhibition-date" aria-label="Näyttely 9. lokakuuta – 9. joulukuuta 2026">
+          <time datetime="2026-10-09">09.10.</time>
+          <span aria-hidden="true">↓</span>
+          <time datetime="2026-12-09">09.12.26</time>
+        </div>
+        <div class="exhibition-details">
+          <p class="exhibition-status"><span aria-hidden="true"></span>Nyt esillä</p>
+          <h3>MERIRASTI<br>FINAL Pop-Up</h3>
+          <p class="exhibition-lead">Osa Merituulin teoksista on mukana Kulttuuritila Merirastin yhteisnäyttelyssä.</p>
+          <dl>
+            <div>
+              <dt>Paikka</dt>
+              <dd>Kulttuuritila Merirasti</dd>
+            </div>
+            <div>
+              <dt>Osoite</dt>
+              <dd>Jaluspolku 3<br>00980 Helsinki</dd>
+            </div>
+            <div>
+              <dt>Näyttelyaika</dt>
+              <dd><time datetime="2026-10-09">9.10.</time>–<time datetime="2026-12-09">9.12.2026</time></dd>
+            </div>
+            <div>
+              <dt>Aukiolo</dt>
+              <dd>Ke, to, pe ja su<br>klo 13–17</dd>
+            </div>
+          </dl>
+          <a class="facebook-link" href="https://www.facebook.com/events/1655878799288100/1655878875954759/" target="_blank" rel="noopener noreferrer">
+            Katso Facebook-tapahtuma <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
     </section>
 
     <section class="invitation" aria-label="Yhteystiedot">
