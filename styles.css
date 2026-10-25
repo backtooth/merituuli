@@ -383,7 +383,9 @@ button { font: inherit; }
   .hero-copy { min-height: auto; padding: 3rem 1.25rem; }
   .hero h1 { font-size: clamp(2.8rem, 12vw, 5.4rem); }
   .hero-intro { margin: 1.5rem 0 1.25rem; }
-  .hero-choice strong { font-size: clamp(1.45rem, 6vw, 2rem); }
+  .hero-choices { grid-template-columns: 1fr; }
+  .hero-choice { min-height: 5.25rem; padding: 1rem 1.1rem; }
+  .hero-choice strong { font-size: clamp(1.7rem, 7vw, 2.3rem); }
   .hero-art { min-height: 73svh; }
   .hero-art-main { inset: 7% 10% 7% 5%; }
   .section-heading { display: block; }
@@ -394,13 +396,24 @@ button { font: inherit; }
   .poem-fragment { font-size: clamp(2.8rem, 11vw, 4.5rem); }
   .exhibitions-intro { grid-template-columns: 1fr; gap: 1.5rem; }
   .exhibitions-intro h2 { font-size: clamp(3.4rem, 15vw, 6rem); }
-  .exhibition-card { grid-template-columns: 1fr; }
-  .exhibition-date { flex-direction: row; align-items: center; min-height: 0; }
-  .exhibition-date time { font-size: clamp(2.7rem, 12vw, 4.5rem); }
+  .exhibition-card { grid-template-columns: minmax(0, 1fr); width: 100%; min-width: 0; }
+  .exhibition-date {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: .75rem;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 1rem;
+  }
+  .exhibition-date time { min-width: 0; font-size: clamp(2.2rem, 11vw, 4.2rem); white-space: nowrap; }
+  .exhibition-date time:last-child { text-align: right; }
   .exhibition-date > span { transform: rotate(-90deg); }
+  .exhibition-details { width: 100%; min-width: 0; }
   .exhibition-details h3 { font-size: clamp(3rem, 14vw, 5.5rem); }
   .collection-hero { display: block; padding-top: 5rem; }
-  .collection-hero h1 { margin-top: 4rem; font-size: clamp(5rem, 25vw, 8rem); }
+  .collection-hero h1 { max-width: 100%; margin-top: 4rem; font-size: clamp(3.8rem, 19vw, 7rem); overflow-wrap: anywhere; }
   .collection-hero > p:last-child { margin-top: 2rem; }
   .art-grid { display: block; }
   .artwork,
@@ -409,9 +422,12 @@ button { font: inherit; }
   .artwork--portrait:nth-child(even),
   .artwork--final { width: 100%; max-width: 34rem; margin: 0 auto 5rem; }
   .artwork--portrait { max-width: 27rem; }
-  .poem { grid-template-columns: 1fr; gap: .5rem; }
+  .poem { grid-template-columns: minmax(0, 1fr); gap: .5rem; width: 100%; min-width: 0; overflow: hidden; }
+  .poem > * { width: 100%; min-width: 0; }
   .poem header { position: static; }
-  .poem-text { padding-top: 1.5rem; font-size: 1.28rem; line-height: 1.6; overflow-wrap: anywhere; }
+  .poem-text { max-width: 100%; padding-top: 1.5rem; font-size: 1.28rem; line-height: 1.6; overflow-wrap: anywhere; word-break: break-word; }
+  .poem-text p,
+  .poem h2 { max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
   .poem h2 { font-size: clamp(3.2rem, 14vw, 5.5rem); }
   .next-path { align-items: flex-start; flex-direction: column; }
   .next-path a { font-size: clamp(3.5rem, 16vw, 6rem); }
@@ -421,7 +437,6 @@ button { font: inherit; }
   .wordmark { font-size: 1rem; }
   .site-header nav { gap: .7rem; }
   .site-header nav a:last-child { display: none; }
-  .hero-choices { grid-template-columns: 1fr; }
   .hero-copy { min-height: auto; }
   .hero-art { min-height: 65svh; }
   .path-card { min-height: 145vw; }
