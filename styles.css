@@ -360,7 +360,7 @@ button { font: inherit; }
 .poems-page { background: var(--ink); }
 .poem-list { border-top: 1px solid var(--line-dark); }
 .poem { display: grid; grid-template-columns: minmax(14rem, 1fr) 2fr; gap: 3rem; padding: clamp(4rem, 9vw, 9rem) clamp(1.25rem, 6vw, 7rem); border-bottom: 1px solid var(--line-dark); }
-.poem header { position: sticky; top: 2rem; align-self: start; }
+.poem header { position: static; align-self: start; }
 .poem header span { color: var(--acid); font-size: .7rem; letter-spacing: .15em; }
 .poem h2 { max-width: 8em; margin: .6rem 0 0; font-family: var(--serif); font-size: clamp(3rem, 6vw, 7rem); font-weight: 300; line-height: .88; letter-spacing: -.055em; }
 .poem-text { max-width: 40rem; padding-top: 2.4rem; font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.75rem); font-weight: 300; line-height: 1.65; }
