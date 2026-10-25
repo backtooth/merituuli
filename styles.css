@@ -319,7 +319,9 @@ button { font: inherit; }
 .site-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem clamp(1.25rem, 4vw, 4.5rem); border-top: 1px solid var(--line-dark); color: rgba(241,237,228,.6); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
 .site-footer a { text-underline-offset: .25rem; }
 
-.gallery-page { background: var(--paper); color: var(--ink); }
+.gallery-page { background: var(--ink); color: var(--paper); }
+.gallery-page .site-header--light { border-bottom-color: var(--line-dark); }
+.gallery-page .collection-hero { border-bottom-color: var(--line-dark); }
 .collection-hero { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: end; padding: clamp(5rem, 10vw, 10rem) clamp(1.25rem, 5vw, 5rem); border-bottom: 1px solid var(--line-light); }
 .collection-hero .eyebrow { align-self: start; }
 .collection-hero h1 { grid-column: 2; margin: 0; font-family: var(--serif); font-size: clamp(5rem, 13vw, 13rem); font-weight: 300; line-height: .68; letter-spacing: -.07em; }
@@ -348,12 +350,12 @@ button { font: inherit; }
 .lightbox-close { position: fixed; top: 1rem; right: 1.25rem; z-index: 2; width: 2.75rem; height: 2.75rem; border: 1px solid rgba(255,255,255,.45); border-radius: 50%; background: rgba(0,0,0,.4); color: #fff; font-size: 1.7rem; line-height: 1; cursor: pointer; }
 .lightbox-title { margin: .75rem 0 0; text-align: center; font-family: var(--serif); font-size: 1.2rem; }
 .modal-open { overflow: hidden; }
-.next-path { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 5vw, 5rem); border-top: 1px solid var(--line-light); }
+.next-path { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(3rem, 7vw, 7rem) clamp(1.25rem, 5vw, 5rem); border-top: 1px solid var(--line-dark); }
 .next-path > span { font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
 .next-path a { font-family: var(--serif); font-size: clamp(3.5rem, 8vw, 8rem); font-weight: 300; letter-spacing: -.05em; text-decoration: none; }
 .next-path a span { display: inline-block; transition: transform .25s ease; }
 .next-path a:hover span { transform: translateX(.5rem); }
-.site-footer--light { border-color: var(--line-light); color: rgba(24,32,29,.65); }
+.site-footer--light { border-color: var(--line-dark); color: rgba(241,237,228,.65); }
 
 .poems-page { background: var(--ink); }
 .poem-list { border-top: 1px solid var(--line-dark); }
