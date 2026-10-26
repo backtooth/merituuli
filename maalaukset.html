@@ -7,8 +7,9 @@
   <meta name="theme-color" content="#171d19">
   <title>Maalaukset — Merituuli</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=12">
   <script src="gallery.js" defer></script>
+  <script src="audio.js?v=1" defer></script>
 </head>
 <body class="gallery-page">
   <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
@@ -23,7 +24,7 @@
 
   <main id="sisalto">
     <header class="collection-hero">
-      <p class="eyebrow">Polku I · 11 teosta</p>
+      <p class="eyebrow">Polku I · 12 teosta</p>
       <h1>Maalaukset</h1>
       <p>Luontoa, symboleja ja kerroksia. Valitse teos ja katso lähempää.</p>
     </header>
@@ -50,60 +51,74 @@
         <figcaption><span>03</span><h2>Eläimet tutkii symboleja <small>sarja, osa 1</small></h2></figcaption>
       </figure>
 
+      <figure class="artwork artwork--portrait">
+        <button class="artwork-button" type="button" data-lightbox="assets/images/moskovassa.jpg" data-title="Moskovassa" aria-label="Avaa teos Moskovassa suurempana">
+          <img src="assets/images/moskovassa.jpg" alt="Moskovassa, kukka-aiheinen maalaus, johon Moskovassa-runo on kirjoitettu" width="949" height="1239" loading="lazy">
+        </button>
+        <figcaption>
+          <span>04</span><h2>Moskovassa</h2>
+          <a href="runot.html#moskovassa">Lue samanniminen runo →</a>
+          <button class="audio-button" type="button" data-audio="assets/audio/moskovassa.ogg" data-audio-title="Moskovassa" aria-label="Kuuntele runo Moskovassa" aria-pressed="false">
+            <span class="audio-button__icon" data-audio-icon aria-hidden="true">▶</span>
+            <span data-audio-label>Kuuntele runo</span>
+          </button>
+        </figcaption>
+      </figure>
+
       <figure class="artwork artwork--portrait artwork--offset">
         <button class="artwork-button" type="button" data-lightbox="assets/images/mustikat.jpeg" data-title="Mustikat" aria-label="Avaa teos Mustikat suurempana">
           <img src="assets/images/mustikat.jpeg" alt="Mustikat, sinivihreä metsäaiheinen maalaus marjoineen" width="636" height="1131" loading="lazy">
         </button>
-        <figcaption><span>04</span><h2>Mustikat</h2></figcaption>
+        <figcaption><span>05</span><h2>Mustikat</h2></figcaption>
       </figure>
 
       <figure class="artwork artwork--landscape">
         <button class="artwork-button" type="button" data-lightbox="assets/images/muurissa.jpg" data-title="Muurissa" aria-label="Avaa teos Muurissa suurempana">
           <img src="assets/images/muurissa.jpg" alt="Muurissa" width="1599" height="899" loading="lazy">
         </button>
-        <figcaption><span>05</span><h2>Muurissa</h2></figcaption>
+        <figcaption><span>06</span><h2>Muurissa</h2></figcaption>
       </figure>
 
       <figure class="artwork artwork--portrait">
         <button class="artwork-button" type="button" data-lightbox="assets/images/pahan-kukat.jpeg" data-title="Pahan kukat" aria-label="Avaa teos Pahan kukat suurempana">
           <img src="assets/images/pahan-kukat.jpeg" alt="Pahan kukat" width="1200" height="1600" loading="lazy">
         </button>
-        <figcaption><span>06</span><h2>Pahan kukat</h2></figcaption>
+        <figcaption><span>07</span><h2>Pahan kukat</h2></figcaption>
       </figure>
 
       <figure class="artwork artwork--portrait artwork--offset">
         <button class="artwork-button" type="button" data-lightbox="assets/images/purple-rain.jpeg" data-title="Purple Rain" aria-label="Avaa teos Purple Rain suurempana">
           <img src="assets/images/purple-rain.jpeg" alt="Purple Rain, syvän purppurainen abstrakti maalaus" width="1293" height="1600" loading="lazy">
         </button>
-        <figcaption><span>07</span><h2>Purple Rain</h2></figcaption>
+        <figcaption><span>08</span><h2>Purple Rain</h2></figcaption>
       </figure>
 
       <figure class="artwork artwork--portrait">
         <button class="artwork-button" type="button" data-lightbox="assets/images/roihussa.jpeg" data-title="Roihussa" aria-label="Avaa teos Roihussa suurempana">
           <img src="assets/images/roihussa.jpeg" alt="Roihussa" width="1200" height="1600" loading="lazy">
         </button>
-        <figcaption><span>08</span><h2>Roihussa</h2></figcaption>
+        <figcaption><span>09</span><h2>Roihussa</h2></figcaption>
       </figure>
 
       <figure class="artwork artwork--portrait artwork--offset">
         <button class="artwork-button" type="button" data-lightbox="assets/images/ruusut.jpeg" data-title="Ruusut" aria-label="Avaa teos Ruusut suurempana">
           <img src="assets/images/ruusut.jpeg" alt="Ruusut" width="899" height="1599" loading="lazy">
         </button>
-        <figcaption><span>09</span><h2>Ruusut</h2></figcaption>
+        <figcaption><span>10</span><h2>Ruusut</h2></figcaption>
       </figure>
 
       <figure class="artwork artwork--portrait">
         <button class="artwork-button" type="button" data-lightbox="assets/images/tyhja-aalto.jpeg" data-title="Tyhjä aalto" aria-label="Avaa teos Tyhjä aalto suurempana">
           <img src="assets/images/tyhja-aalto.jpeg" alt="Tyhjä aalto, kuun valaisema tumma merimaisema" width="848" height="1131" loading="lazy">
         </button>
-        <figcaption><span>10</span><h2>Tyhjä aalto</h2><a href="runot.html#tyhja-aalto">Lue samanniminen runo →</a></figcaption>
+        <figcaption><span>11</span><h2>Tyhjä aalto</h2><a href="runot.html#tyhja-aalto">Lue samanniminen runo →</a></figcaption>
       </figure>
 
       <figure class="artwork artwork--portrait artwork--final">
         <button class="artwork-button" type="button" data-lightbox="assets/images/yksin.jpeg" data-title="Yksin" aria-label="Avaa teos Yksin suurempana">
           <img src="assets/images/yksin.jpeg" alt="Yksin, siipensä levittänyt lintu tumman metsän keskellä" width="899" height="1599" loading="lazy">
         </button>
-        <figcaption><span>11</span><h2>Yksin</h2></figcaption>
+        <figcaption><span>12</span><h2>Yksin</h2></figcaption>
       </figure>
     </section>
 

@@ -342,6 +342,12 @@ button { font: inherit; }
 .artwork h2 { margin: 0; font-family: var(--serif); font-size: clamp(1.5rem, 2vw, 2.2rem); font-weight: 300; }
 .artwork h2 small { display: block; font-family: var(--sans); font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; }
 .artwork figcaption > a { grid-column: 2; margin-top: .25rem; font-size: .72rem; text-underline-offset: .25rem; }
+.artwork figcaption > .audio-button { grid-column: 2; justify-self: start; }
+.audio-button { display: inline-flex; align-items: center; gap: .65rem; width: max-content; max-width: 100%; margin-top: .8rem; padding: .7rem 1rem; border: 1px solid currentColor; border-radius: 999px; color: inherit; background: transparent; font-size: .7rem; font-weight: 600; letter-spacing: .08em; line-height: 1; text-transform: uppercase; cursor: pointer; transition: color .2s ease, background-color .2s ease, border-color .2s ease; }
+.audio-button:hover,
+.audio-button:focus-visible,
+.audio-button[aria-pressed="true"] { border-color: var(--acid); color: var(--ink); background: var(--acid); outline: none; }
+.audio-button__icon { display: inline-grid; width: 1.2rem; height: 1.2rem; place-items: center; font-size: .72rem; line-height: 1; }
 .lightbox { width: 100vw; max-width: none; height: 100vh; max-height: none; padding: 1rem; border: 0; background: rgba(12, 15, 14, .96); color: var(--paper); }
 .lightbox::backdrop { background: rgba(12,15,14,.8); }
 .lightbox[open] { display: grid; grid-template-rows: 1fr auto; }
