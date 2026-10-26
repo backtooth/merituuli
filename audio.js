@@ -48,7 +48,8 @@ audioButtons.forEach((button) => {
 
     try {
       await audio.play();
-    } catch {
+    } catch (error) {
+      if (error.name === 'AbortError') return;
       updateAudioButton(button, 'idle');
       const label = button.querySelector('[data-audio-label]');
       label.textContent = 'Toisto ei onnistunut';
